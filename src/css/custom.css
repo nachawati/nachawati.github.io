@@ -1,0 +1,13 @@
+
+
+div[class^='announcementBar_node_modules-@docusaurus-theme-classic-lib-theme-AnnouncementBar-styles-module'] {
+  height: auto !important;
+  line-height: normal !important;
+  padding: 10px;
+}
+
+div[class^='content_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar-Content-styles-module'] {
+  color: #f8f9fa;
+  font-size: 18px !important;
+  padding: 0 !important;
+}
