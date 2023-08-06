@@ -9,7 +9,7 @@ I'm available for independent contracting and consulting. If you're interested, 
         <img src="/img/nachawati.jpg" style={{width: '100%', borderRadius: '25px'}} alt="image"></img>
     </div>
     <div class="col col--9">
-        I work as a research software engineer collaborating with research-oriented companies and universities on R&D projects involving the development of modeling languages, tooling, algorithms, middleware & applications for large-scale integration and decision guidance analytics in the domain of digital engineering and smart manufacturing. Since 2005, I've worked different roles in the areas software development, research and education. I obtained my <a href="https://www.parchment.com/u/s/iXNI">PhD degree</a> in 2021 from the Department of Computer Science at George Mason University under the supervision of <a href="https://cs.gmu.edu/~brodsky/">Professor Alexander Brodsky</a> after successfully defending my doctoral dissertation titled, <a href="http://ebot.gmu.edu/bitstream/handle/1920/12635/Nachawati_gmu_0883E_12583.pdf?sequence=1&isAllowed=y">Grey-Box Optimization Algorithms for Decision Guidance Analytics Management Systems</a>.
+        I work as a research software engineer collaborating with research-oriented companies and universities on R&D projects involving the development of modeling languages, tooling, algorithms, middleware & applications for large-scale integration and decision guidance analytics in the domain of digital engineering and smart manufacturing. Since 2005, I've worked different roles in the areas of software development, research and education. I obtained my <a href="https://www.parchment.com/u/s/iXNI">PhD degree</a> in 2021 from the Department of Computer Science at George Mason University under the supervision of <a href="https://cs.gmu.edu/~brodsky/">Professor Alexander Brodsky</a> after successfully defending my doctoral dissertation titled, <a href="http://ebot.gmu.edu/bitstream/handle/1920/12635/Nachawati_gmu_0883E_12583.pdf?sequence=1&isAllowed=y">Grey-Box Optimization Algorithms for Decision Guidance Analytics Management Systems</a>.
     </div>
 </div>
 
@@ -19,9 +19,9 @@ I'm available for independent contracting and consulting. If you're interested, 
 
 My current research interests include:
 
-- Provably and empirically efficient grey-box optimization, uncertainty quantification and training algorithms that combine techniques from mathematical programming, numerical analysis, machine learning and artifical intelligence
+- Provably and empirically efficient grey-box optimization, uncertainty quantification and training algorithms that combine techniques from mathematical programming, numerical analysis, machine learning and artificial intelligence
 
-- Languages, ontologies, knowledge graphs and middleware for large-scale semantic integration and decision guidance in the domain of digital engineering and smart manufacturing
+- Languages, ontologies, knowledge graphs and middleware for large-scale semantic integration and decision guidance analytics in the domain of digital engineering and smart manufacturing
 
 ## Selected Publications
 A complete record of publications is maintained at my [Google Scholar](https://scholar.google.com/citations?hl=en&user=LQJ_8wIAAAAJ&view_op=list_works&sortby=pubdate) profile.
