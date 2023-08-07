@@ -28,6 +28,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        blog: {
+          showReadingTime: true
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -46,6 +49,7 @@ const config = {
           { label: 'Publications', href: 'https://scholar.google.com/citations?hl=en&user=LQJ_8wIAAAAJ&view_op=list_works&sortby=pubdate' },
           { label: 'Projects', href: 'https://github.com/nachawati' },
           { label: 'Teaching', to: '/teaching' },
+          { label: 'Blog', to: '/blog' },
           { label: 'mnachawa@gmail.com', position: 'right', href: 'mailto:mnachawa@gmail.com' }
         ]
       },
