@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Dr. Mohamad Omar Nachawati Blog</title>
+        <link>https://nachawati.me/blog</link>
+        <description>Dr. Mohamad Omar Nachawati Blog</description>
+        <lastBuildDate>Tue, 08 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Compiling CasADi to WebAssembly]]></title>
+            <link>https://nachawati.me/blog/2023/08/08/compiling-casadi-webassembly</link>
+            <guid>https://nachawati.me/blog/2023/08/08/compiling-casadi-webassembly</guid>
+            <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is my first post on Docusaurus 2.]]></description>
+            <content:encoded><![CDATA[<p>Today I revisited <a href="https://web.casadi.org/" target="_blank" rel="noopener noreferrer">CasADi</a> to see if I could use <a href="https://emscripten.org/" target="_blank" rel="noopener noreferrer">emscripten</a> to compile it to a WebAssembly and run it inside of a Web browser. CasADi is an awesome tool for performing <a href="https://en.wikipedia.org/wiki/Computer_algebra" target="_blank" rel="noopener noreferrer">symbolic computation</a> and <a href="https://en.wikipedia.org/wiki/Automatic_differentiation" target="_blank" rel="noopener noreferrer">automatic differentiation</a>, among other things. It also provides interfaces to popular open-source solvers, such as the MINLP solver <a href="https://www.coin-or.org/Bonmin/" target="_blank" rel="noopener noreferrer">BONMIN</a>.</p><p>I had previously used CasADi during my PhD to implement a grey-box algorithmic framework that I had designed and aptly named GreyOpt (<a href="https://www.scitepress.org/PublishedPapers/2021/103501/103501.pdf" target="_blank" rel="noopener noreferrer">paper</a>, <a href="http://mason.gmu.edu/~mnachawa/icores2021-slides.pdf" target="_blank" rel="noopener noreferrer">slides</a>). I also used CasADi for implementing the main backend of <a href="https://github.com/nachawati/unity" target="_blank" rel="noopener noreferrer">Unity DGMS</a>, an open-source JSONiq analytics engine. I thought it would be interesting to see if at least some functionality could be easily ported to run directly in the browser.</p><p>It was fairly easy to add a new executable target in <a href="https://cmake.org/" target="_blank" rel="noopener noreferrer">CMAKE</a>, along with a simple C API that wrapped some functions for constructing symbolic variables and for performing basic symbolic arithmetic. I initially got some compilation errors stemming from an issue with some preprocessor directives that conditionally enabled the <code>pack</code> and <code>unpack</code> methods for <code>unsigned int&amp;</code> arguments based on the value of <code>SIZE_MAX</code> (WASM support is currently only 32-bit).</p><p>After resolving those errors, the build and linking of the CasADi WebAssembly completed successfully. Now I can use CasADi to do computer algebra in Chromium ;-)</p>]]></content:encoded>
+            <author>mnachawa@gmail.com (Mohamad Omar Nachawati)</author>
+            <category>casadi</category>
+            <category>wasm</category>
+            <category>webassembly</category>
+        </item>
+    </channel>
+</rss>

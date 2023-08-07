@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknachawati_github_io=self.webpackChunknachawati_github_io||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Compiling CasADi to WebAssembly","permalink":"/blog/2023/08/08/compiling-casadi-webassembly"}]}')}}]);
