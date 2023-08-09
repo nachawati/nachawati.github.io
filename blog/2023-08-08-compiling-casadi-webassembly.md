@@ -1,6 +1,5 @@
 ---
 title: Compiling CasADi to WebAssembly
-description: This is my first post on Docusaurus 2.
 authors: nachawati
 tags: [casadi,wasm,webassembly]
 image: /img/casadi.png
