@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+image: /img/cube-1873956_640.png
 ---
 
 # 3 - Add Unity DGMS Shell Script to PATH

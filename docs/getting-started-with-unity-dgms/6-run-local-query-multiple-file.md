@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+image: /img/cube-1873956_640.png
 ---
 
 # 6 - Run Local Query (Multiple File)

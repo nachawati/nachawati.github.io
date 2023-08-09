@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+image: /img/cube-1873956_640.png
 ---
 
 # 2 - Pull Unity DGMS Docker Image

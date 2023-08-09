@@ -1,5 +1,6 @@
 ---
 sidebar_position: 8
+image: /img/cube-1873956_640.png
 ---
 
 # 8 - Packages and Dependencies

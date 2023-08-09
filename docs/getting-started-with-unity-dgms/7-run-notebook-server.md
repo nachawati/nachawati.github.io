@@ -1,5 +1,6 @@
 ---
 sidebar_position: 7
+image: /img/cube-1873956_640.png
 ---
 
 # 7 - Run Local Notebook Server

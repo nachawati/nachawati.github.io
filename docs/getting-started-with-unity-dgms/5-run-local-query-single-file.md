@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+image: /img/cube-1873956_640.png
 ---
 
 # 5 - Run Local Query (Single File)

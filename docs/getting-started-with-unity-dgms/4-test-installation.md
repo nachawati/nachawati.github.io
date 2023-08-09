@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+image: /img/cube-1873956_640.png
 ---
 
 # 4 - Test Installation
