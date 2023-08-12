@@ -54,6 +54,7 @@ const config = {
           { label: 'Teaching', to: '/teaching' },
           { label: 'Tutorials', type: 'docSidebar', sidebarId: 'tutorialsSidebar' },
           { label: 'Blog', to: '/blog' },
+          { label: '🤝 Become a sponsor', position: 'right', href: 'https://github.com/sponsors/nachawati' },
           { label: 'mnachawa@gmail.com', position: 'right', href: 'mailto:mnachawa@gmail.com' }
         ]
       },
