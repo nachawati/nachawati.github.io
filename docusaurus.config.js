@@ -92,7 +92,7 @@ const config = {
             title: 'Social',
             items: [
               { label: 'GitHub', href: 'https://github.com/nachawati' },
-              { label: 'Twitter', href: 'https://twitter.com/nachawati' },
+              { label: 'Twitter', href: 'https://twitter.com/realNachawati' },
               { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nachawati' },
               { label: 'E-mail', href: 'mailto:mnachawa@gmail.com' }
             ],
