@@ -4,10 +4,24 @@
         <title>Dr. Mohamad Omar Nachawati Blog</title>
         <link>https://nachawati.me/blog</link>
         <description>Dr. Mohamad Omar Nachawati Blog</description>
-        <lastBuildDate>Tue, 08 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Workaround for Differences Between Node.js and Web Tree-sitter APIs]]></title>
+            <link>https://nachawati.me/blog/2023/08/17/tree-sitter-api-differences-node-and-web-workaround</link>
+            <guid>https://nachawati.me/blog/2023/08/17/tree-sitter-api-differences-node-and-web-workaround</guid>
+            <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Tree-sitter is great tool for building incremental and error-tolerant parsers for use in compilers, IDEs and code analyzers, which can also run directly in the browser. Unlike ANTLR, which is a popular open-source LL(*) parser generator, tree-sitter is a GLR parser generator that's similar but more powerful than the LALR parser generator YACC that we all were forced to learn back in CS 440 😅.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tree-sitter.github.io/tree-sitter/" target="_blank" rel="noopener noreferrer">Tree-sitter</a> is great tool for building incremental and error-tolerant parsers for use in compilers, IDEs and code analyzers, which can also run directly in the browser. Unlike <a href="https://www.antlr.org/" target="_blank" rel="noopener noreferrer">ANTLR</a>, which is a popular open-source <a href="https://en.wikipedia.org/wiki/LL_parser" target="_blank" rel="noopener noreferrer">LL(*) parser</a> generator, tree-sitter is a <a href="https://en.wikipedia.org/wiki/GLR_parser" target="_blank" rel="noopener noreferrer">GLR parser</a> generator that's similar but more powerful than the <a href="https://en.wikipedia.org/wiki/LALR_parser" target="_blank" rel="noopener noreferrer">LALR parser</a> generator <a href="https://en.wikipedia.org/wiki/Yacc" target="_blank" rel="noopener noreferrer">YACC</a> that we all were forced to learn back in <a href="https://cs.gmu.edu/~white/CS440/" target="_blank" rel="noopener noreferrer">CS 440</a> 😅.</p><p>It's also nice that tree-sitter is open-source, unlike the closed-source <a href="https://www.bottlecaps.de/rex/" target="_blank" rel="noopener noreferrer">REx Parser Generator</a> that I used to generate the <a href="https://www.jsoniq.org/" target="_blank" rel="noopener noreferrer">JSONiq</a> parser for the <a href="https://github.com/nachawati/unity" target="_blank" rel="noopener noreferrer">Unity DGMS</a> analytics engine (from the <a href="https://www.jsoniq.org/grammars/jq++.ebnf" target="_blank" rel="noopener noreferrer">ebnf grammar</a>). I guess it can be a bit disquieting for a project to depend on <a href="https://twitter.com/__Gunther__" target="_blank" rel="noopener noreferrer">Gunther Rademacher</a> to continuing maintaining his REx web service 😬.</p><p>Recently, however, I ran into a problem with tree-sitter when trying to reuse TypeScript code for both Node.js and the Web. Although both of these tree-sitter API implementations can be called separately from TypeScript (or JavaScript), slight differences prevents seamlessly interchanging them in a cross-platform build. Until this problem is properly fixed, I've developed a simple workaround that provides a unified tree-sitter API for both Node.js and the Web.</p><p>To use it, simply import this <a href="https://gist.github.com/nachawati/351cba7c0b9adff2b75a2fafe3e73ac3#file-tree-sitter-api-ts" target="_blank" rel="noopener noreferrer">Gist</a> in any common module that processes tree-sitter <code>SyntaxNode</code>s. Please note that this workaround does not eliminate the need for Node.js- and Web- specific loading and initialization of the tree-sitter API and languages.</p><iframe width="100%" frameborder="0" id="gist-351cba7c0b9adff2b75a2fafe3e73ac3"></iframe>]]></content:encoded>
+            <author>mnachawa@gmail.com (Mohamad Omar Nachawati)</author>
+            <category>node</category>
+            <category>parsing</category>
+            <category>wasm</category>
+            <category>web</category>
+            <category>webassembly</category>
+        </item>
         <item>
             <title><![CDATA[Compiling CasADi to WebAssembly]]></title>
             <link>https://nachawati.me/blog/2023/08/08/compiling-casadi-webassembly</link>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknachawati_github_io=self.webpackChunknachawati_github_io||[]).push([[27],{3572:a=>{a.exports=JSON.parse('{"label":"wasm","permalink":"/blog/tags/wasm","allTagsPath":"/blog/tags","count":2}')}}]);

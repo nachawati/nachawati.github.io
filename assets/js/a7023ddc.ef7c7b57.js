@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknachawati_github_io=self.webpackChunknachawati_github_io||[]).push([[1713],{3457:a=>{a.exports=JSON.parse('[{"label":"casadi","permalink":"/blog/tags/casadi","count":1},{"label":"wasm","permalink":"/blog/tags/wasm","count":1},{"label":"webassembly","permalink":"/blog/tags/webassembly","count":1}]')}}]);
