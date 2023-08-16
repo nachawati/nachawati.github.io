@@ -1,0 +1,19 @@
+---
+title: Workaround for Differences Between Node.js and Web Tree-sitter APIs
+authors: nachawati
+tags: [node,parsing,wasm,web,webassembly]
+image: /img/casadi.png
+---
+
+[Tree-sitter](https://tree-sitter.github.io/tree-sitter/) is great tool for building incremental and error-tolerant parsers for use in compilers, IDEs and code analyzers, which can also run directly in the browser. Unlike [ANTLR](https://www.antlr.org/), which is a popular open-source [LL(*) parser](https://en.wikipedia.org/wiki/LL_parser) generator, tree-sitter is a [GLR parser](https://en.wikipedia.org/wiki/GLR_parser) generator that's similar but more powerful than the [LALR parser](https://en.wikipedia.org/wiki/LALR_parser) generator [YACC](https://en.wikipedia.org/wiki/Yacc) that we all were forced to learn back in [CS 440](https://cs.gmu.edu/~white/CS440/) 😅.
+
+It's also nice that tree-sitter is open-source, unlike the closed-source [REx Parser Generator](https://www.bottlecaps.de/rex/) that I used to generate the [JSONiq](https://www.jsoniq.org/) parser for the [Unity DGMS](https://github.com/nachawati/unity) analytics engine (from the [ebnf grammar](https://www.jsoniq.org/grammars/jq++.ebnf)). I guess it can be a bit disquieting for a project to depend on [Gunther Rademacher](https://twitter.com/__Gunther__) to continuing maintaining his REx web service 😬.
+
+Recently, however, I ran into a problem with tree-sitter when trying to reuse TypeScript code for both Node.js and the Web. Although both of these tree-sitter API implementations can be called separately from TypeScript (or JavaScript), slight differences prevents seamlessly interchanging them in a cross-platform build. Until this problem is properly fixed, I've developed a simple workaround that provides a unified tree-sitter API for both Node.js and the Web.
+
+To use it, simply import this [Gist](https://gist.github.com/nachawati/351cba7c0b9adff2b75a2fafe3e73ac3#file-tree-sitter-api-ts) in any common module that processes tree-sitter `SyntaxNode`s. Please note that this workaround does not eliminate the need for Node.js- and Web- specific loading and initialization of the tree-sitter API and languages.
+
+import Gist from 'react-gist';
+
+<Gist id="351cba7c0b9adff2b75a2fafe3e73ac3" 
+/>
